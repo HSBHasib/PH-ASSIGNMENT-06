@@ -1,11 +1,10 @@
-import React from 'react';
 import { FaFacebookSquare } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { TbBrandInstagramFilled } from 'react-icons/tb';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#101727] text-gray-400 sm:px-20 sm:py-20 sm:pb-8 px-2 py-10 relative overflow-hidden">
+    <footer className="bg-[#101727] text-gray-400 sm:py-20 sm:pb-8 px-2 py-10 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-[4px] bg-[linear-gradient(88deg,#4f39f6_0%,#9514fa_100%)]"></div>
 
         <div className="max-w-6xl mx-auto px-6">

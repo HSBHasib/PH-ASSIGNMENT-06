@@ -6,8 +6,8 @@ const GetStarted = () => {
     <section className="py-20 bg-[#F9FAFC] md:px-20 px-10">
       <div className="max-w-6xl mx-auto text-center space-y-10">
         <div>
-            <h2 className="text-[42px] font-extrabold text-gray-900 ">Get Started In 3 Steps</h2>
-            <p className="text-gray-500">Start using premium digital tools in minutes, not hours.</p>
+            <h2 className="text-[40px] font-extrabold text-gray-900 ">Get Started In 3 Steps</h2>
+            <p className="text-gray-500 text-[15px]">Start using premium digital tools in minutes, not hours.</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">          

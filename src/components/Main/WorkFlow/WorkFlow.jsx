@@ -1,6 +1,6 @@
 const WorkFlow = () => {
   return (
-    <section className="pt-20 ">
+    <section>
       <div className="w-full mx-auto bg-[linear-gradient(88deg,#4f39f6_0%,#9514fa_100%)] p-12 md:py-20 text-center text-white shadow-2xl relative overflow-hidden">
         
         <div className="relative z-10">
