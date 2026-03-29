@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FiCheck } from 'react-icons/fi';
+import { toast } from 'react-toastify';
 
 const ProductsCards = ({productData, selectProduct, setSelectProduct}) => {
     const {name, description, price, period, tag, tagType, features, icon} = productData;
@@ -10,7 +11,8 @@ const ProductsCards = ({productData, selectProduct, setSelectProduct}) => {
     const handleSelectedBtn = () => {
         if(!isAlreadySelected) {
             setIsSelected(true);
-            setSelectProduct([...selectProduct, productData])
+            setSelectProduct([...selectProduct, productData]);
+            toast.success(`${name} add successfully!`);
         }
     }
 
@@ -29,7 +31,7 @@ const ProductsCards = ({productData, selectProduct, setSelectProduct}) => {
             <img src={icon} alt={name} className="w-full h-full object-contain" />
             </div>
             {tag && (
-            <span className={`px-4 py-1 rounded-full text-xs font-bold 
+            <span className={`px-4 py-1 rounded-full text-xs font-medium 
             ${tagColorMap[tagType] || 'bg-gray-50 text-gray-400'}`}>
                 {tag}
             </span>

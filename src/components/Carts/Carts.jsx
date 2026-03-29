@@ -1,16 +1,19 @@
 import React from 'react'
+import { GiShoppingCart } from 'react-icons/gi';
+import { toast } from 'react-toastify';
 
 const Carts = ({ selectProduct, setSelectProduct }) => {
 
-    const handleRemove = (id) => {
+    const handleRemove = (id, name) => {
         const remaining = selectProduct.filter(item => item.id !== id);
         setSelectProduct(remaining);
+        toast.success(`${name} Remove successfully!`);
     }
 
     const handleProceed = () => {
         if(selectProduct.length > 0) {
           setSelectProduct([]);
-        //   toast.success(`Proceed successfull!`);
+          toast.success(`Proceed successfull!`);
           }
     }
 
@@ -43,8 +46,9 @@ const Carts = ({ selectProduct, setSelectProduct }) => {
                         </div>
                     ))
                 ) : (
-                    <div className='text-center py-10 text-gray-400'>
-                        Your cart is empty
+                    <div className='text-center py-10 flex justify-center items-center flex-col'>
+                        <GiShoppingCart className='opacity-40' size={100}/>
+                        <h1 className='text-gray-400 opacity-70 text-sm'>Your cart is empty</h1>
                     </div>
                 )}
             </div>
@@ -56,7 +60,7 @@ const Carts = ({ selectProduct, setSelectProduct }) => {
                         <span className='text-3xl font-extrabold text-gray-900'>${totalPrice}</span>
                     </div>
                     
-                    <button onClick={() => handleProceed()} className='w-full py-3 bg-[linear-gradient(88deg,#4f39f6_0%,#9514fa_100%)] text-white rounded-full font-bold text-lg hover:opacity-90 transition-all active:scale-95 shadow-lg shadow-indigo-200 cursor-pointer'>
+                    <button onClick={() => handleProceed(selectProduct.name)} className='w-full py-3 bg-[linear-gradient(88deg,#4f39f6_0%,#9514fa_100%)] text-white rounded-full font-bold text-lg hover:opacity-90 transition-all active:scale-95 shadow-lg shadow-indigo-200 cursor-pointer'>
                         Proceed To Checkout
                     </button>
                 </div>
