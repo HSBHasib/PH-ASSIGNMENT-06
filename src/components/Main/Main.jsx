@@ -1,10 +1,11 @@
-import React from 'react'
 import GetStarted from './GetStarted/GetStarted'
+import WorkFlow from './WorkFlow/WorkFlow'
 
 const Main = () => {
   return (
     <div>
       <GetStarted />
+      <WorkFlow />
     </div>
   )
 }
