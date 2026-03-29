@@ -1,0 +1,69 @@
+[
+  {
+    "id": 1,
+    "name": "AI Design Tool",
+    "description": "Create professional designs automatically with our AI-powered graphic tool.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["100+ Templates", "Vector Export", "AI Background Remover"],
+    "icon": "/image/products/design-tool.png"
+  },
+  {
+    "id": 2,
+    "name": "Operation Manager",
+    "description": "Streamline your business operations and team tasks with real-time tracking.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Task Automation", "Team Chat", "Performance Analytics"],
+    "icon": "/image/products/operation.png"
+  },
+  {
+    "id": 3,
+    "name": "Portfolio Builder",
+    "description": "Build a stunning personal portfolio website in minutes without any coding.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Custom Domains", "SEO Ready", "Free Hosting"],
+    "icon": "/image/products/portfolio.png"
+  },
+  {
+    "id": 4,
+    "name": "Smart Shopping Cart",
+    "description": "An advanced e-commerce solution for small to medium scale businesses.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "Sale",
+    "tagType": "popular",
+    "features": ["Inventory Sync", "Multiple Gateways", "Order Tracking"],
+    "icon": "/image/products/shopping-cart.png"
+  },
+  {
+    "id": 5,
+    "name": "Social Media Hub",
+    "description": "Manage all your social accounts and schedule posts from a single dashboard.",
+    "price": 30,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Auto Scheduling", "Insight Reports", "Multi-platform"],
+    "icon": "/image/products/social-media.png"
+  },
+  {
+    "id": 6,
+    "name": "Writing Assistant",
+    "description": "Improve your writing speed and quality with AI-driven grammar and style checks.",
+    "price": 120,
+    "period": "yearly",
+    "tag": "Trending",
+    "tagType": "best-seller",
+    "features": ["Plagiarism Check", "Tone Detection", "Browser Extension"],
+    "icon": "/image/products/writing_2327400 1.png"
+  }
+]
+

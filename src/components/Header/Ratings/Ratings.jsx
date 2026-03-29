@@ -1,5 +1,3 @@
-import { FiUsers, FiCpu, FiStar } from 'react-icons/fi';
-
 const Ratings = () => {
   return (
     <div className="w-full bg-[linear-gradient(88deg,#4f39f6_0%,#9514fa_100%)] py-10 px-6">

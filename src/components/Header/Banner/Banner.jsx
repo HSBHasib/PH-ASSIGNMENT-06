@@ -43,7 +43,7 @@ const  Banner = () => {
         </div>
 
         <div className="flex-1 relative">
-          <div className="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100">
+          <div className="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100">
             <img 
               src={bannerImg} 
               alt="AI Technology" 
