@@ -9,7 +9,6 @@ const ProductsCards = ({productData, selectProduct, setSelectProduct}) => {
 
     const handleSelectedBtn = () => {
         if(!isAlreadySelected) {
-            setIsSelected(true);
             setSelectProduct([...selectProduct, productData]);
             toast.success(`${name} add successfully!`);
         }

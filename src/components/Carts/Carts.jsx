@@ -27,13 +27,13 @@ const Carts = ({ selectProduct, setSelectProduct }) => {
             <div className='space-y-4 flex-grow'>
                 {selectProduct.length > 0 ? (
                     selectProduct.map((product) => (
-                        <div key={product.id} className='flex items-center justify-between p-4 bg-gray-100 rounded-xl border border-gray-50'>
+                        <div key={product.id} className='sm:flex items-center justify-between p-4 bg-gray-100 rounded-xl border border-gray-50'>
                             <div className='flex items-center gap-4'>
                                 <div className='w-14 h-14 bg-white rounded-full p-3 flex items-center justify-center border border-gray-200'>
                                     <img src={product.icon} alt={product.name} className='w-full h-full object-contain' />
                                 </div>
                                 <div>
-                                    <h3 className='font-bold text-gray-800'>{product.name}</h3>
+                                    <h3 className='text-[15px] font-bold text-gray-800'>{product.name}</h3>
                                     <p className='text-gray-400 text-sm'>${product.price}</p>
                                 </div>
                             </div>
