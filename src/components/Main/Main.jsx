@@ -1,13 +1,15 @@
+import DigitalTools from './DigitalTools/DigitalTools'
 import GetStarted from './GetStarted/GetStarted'
 import PricingContent from './PricingContent/PricingContent'
 import WorkFlow from './WorkFlow/WorkFlow'
 
-const Main = () => {
+const Main = ({digitalToolsData}) => {
   return (
     <div>
-      <GetStarted />
-      <PricingContent />
-      <WorkFlow />
+        <DigitalTools digitalToolsData={digitalToolsData}/>
+        <GetStarted />
+        <PricingContent />
+        <WorkFlow />
     </div>
   )
 }

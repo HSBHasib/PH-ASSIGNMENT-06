@@ -2,7 +2,6 @@ import { FiCheck } from 'react-icons/fi';
 
 const Cards = ({priceData}) => {
     const {planName, description, price, period, features, buttonText, isPopular, tag} = priceData;
-    console.log(priceData);
   return (
      <div className={`relative rounded-2xl flex flex-col w-80 h-full p-4 transition-all duration-300 ${
       isPopular 
