@@ -1,10 +1,12 @@
 import { use, useState } from "react"
+import ProductsContent from "../ProductsContent/ProductsContent";
+import CartContent from "../CartContent/CartContent";
 
 const DigitalTools = ({digitalToolsData}) => {
     const data = use(digitalToolsData);
-    console.log(data);
-
     const [isSelected, setIsSelected] = useState('products');
+    // const []
+
   return (
     <div className="my-18 space-y-5">
         {/* Heading */}
@@ -24,6 +26,10 @@ const DigitalTools = ({digitalToolsData}) => {
                 px-5 py-2.5 cursor-pointer border-none rounded-full`}>Carts(0)</button>
             </div>
         </div>
+
+        {
+            isSelected === 'products' ? <ProductsContent data={data} /> : <CartContent />    
+        }
     </div>
   )
 }

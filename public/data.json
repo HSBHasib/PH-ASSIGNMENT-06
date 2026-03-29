@@ -8,7 +8,7 @@
     "tag": "Popular",
     "tagType": "popular",
     "features": ["100+ Templates", "Vector Export", "AI Background Remover"],
-    "icon": "/image/products/design-tool.png"
+    "icon": "products/design-tool.png"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "tag": "New",
     "tagType": "new",
     "features": ["Task Automation", "Team Chat", "Performance Analytics"],
-    "icon": "/image/products/operation.png"
+    "icon": "products/operation.png"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "tag": "Best Seller",
     "tagType": "best-seller",
     "features": ["Custom Domains", "SEO Ready", "Free Hosting"],
-    "icon": "/image/products/portfolio.png"
+    "icon": "products/portfolio.png"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "tag": "Sale",
     "tagType": "popular",
     "features": ["Inventory Sync", "Multiple Gateways", "Order Tracking"],
-    "icon": "/image/products/shopping-cart.png"
+    "icon": "products/shopping-cart.png"
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "tag": "New",
     "tagType": "new",
     "features": ["Auto Scheduling", "Insight Reports", "Multi-platform"],
-    "icon": "/image/products/social-media.png"
+    "icon": "products/social-media.png"
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@
     "tag": "Trending",
     "tagType": "best-seller",
     "features": ["Plagiarism Check", "Tone Detection", "Browser Extension"],
-    "icon": "/image/products/writing_2327400 1.png"
+    "icon": "products/writing_2327400 1.png"
   }
 ]
 
