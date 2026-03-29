@@ -5,7 +5,7 @@ const PricingCards = ({pricingData}) => {
   const data = use(pricingData);
   // console.log(data)
   return (
-    <div className="grid grid-cols-3 gap-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
       {
         data.map(priceData => <Cards key={priceData.id} priceData={priceData}/> )
       }
