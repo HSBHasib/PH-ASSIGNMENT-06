@@ -2,10 +2,10 @@ import { use, useState } from "react"
 import ProductsContent from "../ProductsContent/ProductsContent";
 import CartContent from "../CartContent/CartContent";
 
-const DigitalTools = ({digitalToolsData}) => {
+const DigitalTools = ({digitalToolsData, selectProduct, setSelectProduct}) => {
     const data = use(digitalToolsData);
     const [isSelected, setIsSelected] = useState('products');
-    // const []
+    // const [selectProduct, setSelectProduct] = useState([]);
 
   return (
     <div className="my-18 space-y-5">
@@ -23,12 +23,12 @@ const DigitalTools = ({digitalToolsData}) => {
                 px-5 py-2.5 cursor-pointer border-none rounded-full overflow-hidden`}>Products</button>
                 <button onClick={() => setIsSelected('carts')} className={`
                 ${isSelected === 'carts' ? 'bg-[linear-gradient(88deg,#4f39f6_0%,#9514fa_100%)] text-white font-semibold' : 'bg-white text-[#25065D] font-medium'}
-                px-5 py-2.5 cursor-pointer border-none rounded-full`}>Carts(0)</button>
+                px-5 py-2.5 cursor-pointer border-none rounded-full`}>Carts({selectProduct.length})</button>
             </div>
         </div>
 
         {
-            isSelected === 'products' ? <ProductsContent data={data} /> : <CartContent />    
+            isSelected === 'products' ? <ProductsContent data={data} selectProduct={selectProduct} setSelectProduct={setSelectProduct} /> : <CartContent selectProduct={selectProduct} setSelectProduct={setSelectProduct} />    
         }
     </div>
   )

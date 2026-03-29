@@ -1,17 +1,28 @@
+import { useState } from 'react';
 import { FiCheck } from 'react-icons/fi';
 
-const ProductsCards = ({productData}) => {
+const ProductsCards = ({productData, selectProduct, setSelectProduct}) => {
     const {name, description, price, period, tag, tagType, features, icon} = productData;
+    const [isSelected, setIsSelected] = useState(false);
+
+    const isAlreadySelected = selectProduct.some(product => product.name === name);
+
+    const handleSelectedBtn = () => {
+        if(!isAlreadySelected) {
+            setIsSelected(true);
+            setSelectProduct([...selectProduct, productData])
+        }
+    }
 
     const tagColorMap = {
     'best-seller': 'bg-[#FEF3C6] text-[#BB4D00]',
     'popular': 'bg-[#E1E7FF] text-[#9216FA]',
     'new': 'bg-[#DBFCE7] text-[#0A883E]'
-  };
+    };
 
   return (
     <div>
-        <div className="bg-white border border-gray-100 rounded-[30px] py-8 px-6  flex flex-col h-full shadow-sm hover:shadow-md transition-all">
+        <div className="bg-white border border-gray-100 rounded-xl py-8 px-6  flex flex-col h-full shadow-sm hover:shadow-md transition-all">
       
         <div className="flex justify-between items-start mb-3">
             <div className="w-13 h-13 flex items-center justify-center border border-gray-200 rounded-full p-3">
@@ -46,8 +57,10 @@ const ProductsCards = ({productData}) => {
             ))}
         </ul>
 
-        <button className="w-full py-2.5 bg-[linear-gradient(88deg,#4f39f6_0%,#9514fa_100%)] text-white rounded-full font-semibold text-[16px] hover:opacity-90 transition-all active:scale-95 duration-150 cursor-pointer">
-            Buy Now
+        <button onClick={() => handleSelectedBtn(productData)} className={`
+            ${isSelected ? 'bg-green-500' : 'bg-[linear-gradient(88deg,#4f39f6_0%,#9514fa_100%)]' }
+            w-full py-2.5 text-white rounded-full font-semibold text-[16px] hover:opacity-90 transition-all active:scale-95 duration-150 cursor-pointer`}>
+            {isSelected ? 'Added to cart' : 'Buy Now'}
         </button>
 
         </div>

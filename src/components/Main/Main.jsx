@@ -3,10 +3,10 @@ import GetStarted from './GetStarted/GetStarted'
 import PricingContent from './PricingContent/PricingContent'
 import WorkFlow from './WorkFlow/WorkFlow'
 
-const Main = ({digitalToolsData}) => {
+const Main = ({digitalToolsData, selectProduct, setSelectProduct}) => {
   return (
     <div>
-        <DigitalTools digitalToolsData={digitalToolsData}/>
+        <DigitalTools digitalToolsData={digitalToolsData} selectProduct={selectProduct} setSelectProduct={setSelectProduct}/>
         <GetStarted />
         <PricingContent />
         <WorkFlow />

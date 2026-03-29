@@ -3,10 +3,10 @@ import Navber from './Navber/Navber'
 import Banner from './Banner/Banner'
 import Ratings from './Ratings/Ratings'
 
-const Header = () => {
+const Header = ({selectProduct}) => {
   return (
     <div>
-      <Navber />
+      <Navber selectProduct={selectProduct} />
       <Banner />
       <Ratings />
     </div>
