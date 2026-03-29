@@ -23,7 +23,7 @@ const ProductsCards = ({productData, selectProduct, setSelectProduct}) => {
 
   return (
     <div>
-        <div className="bg-white border border-gray-100 rounded-xl py-8 px-6  flex flex-col h-full shadow-sm hover:shadow-md transition-all">
+        <div className="bg-white border border-gray-100 rounded-xl py-8 px-6 flex flex-col h-full shadow-sm hover:shadow-md transition-all">
       
         <div className="flex justify-between items-start mb-3">
             <div className="w-13 h-13 flex items-center justify-center border border-gray-200 rounded-full p-3">
