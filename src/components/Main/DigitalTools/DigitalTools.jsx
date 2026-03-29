@@ -11,7 +11,7 @@ const DigitalTools = ({digitalToolsData, selectProduct, setSelectProduct}) => {
     <div className="my-18 space-y-5">
         {/* Heading */}
       <div className="text-center space-y-1">
-            <h1 className="text-[40px] font-extrabold text-gray-900">Premium Digital Tools</h1>
+            <h1 className="sm:text-[40px] font-extrabold text-gray-900">Premium Digital Tools</h1>
             <p className="text-gray-500 text-[15px] md:max-w-[40%] mx-auto">Choose from our curated collection of premium digital products designed to boost your productivity and creativity.</p>
         </div>
 

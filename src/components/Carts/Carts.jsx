@@ -21,7 +21,7 @@ const Carts = ({ selectProduct, setSelectProduct }) => {
     const totalPrice = selectProduct.reduce((total, item) => total + item.price, 0);
 
     return (
-        <div className='bg-white shadow-xl rounded-xl mx-20 p-7 min-h-[300px] flex flex-col'>
+        <div className='bg-white shadow-xl rounded-xl md:mx-20 mx-6 p-7 min-h-[300px] flex flex-col'>
             <h2 className='text-2xl font-bold text-gray-900 mb-8'>Your Cart</h2>
 
             <div className='space-y-4 flex-grow'>
@@ -38,7 +38,7 @@ const Carts = ({ selectProduct, setSelectProduct }) => {
                                 </div>
                             </div>
                             <button 
-                                onClick={() => handleRemove(product.id)}
+                                onClick={() => handleRemove(product.id, product.name)}
                                 className='text-rose-500 text-sm font-semibold hover:underline cursor-pointer'
                             >
                                 Remove

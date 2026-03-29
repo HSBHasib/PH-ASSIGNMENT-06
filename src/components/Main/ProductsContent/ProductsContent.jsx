@@ -1,4 +1,3 @@
-import React from 'react'
 import ProductsCards from '../../ProductsCards/ProductsCards'
 
 const ProductsContent = ({data, selectProduct, setSelectProduct}) => {

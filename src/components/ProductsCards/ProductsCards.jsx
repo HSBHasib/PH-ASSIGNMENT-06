@@ -1,10 +1,9 @@
-import { useState } from 'react';
 import { FiCheck } from 'react-icons/fi';
 import { toast } from 'react-toastify';
 
 const ProductsCards = ({productData, selectProduct, setSelectProduct}) => {
     const {name, description, price, period, tag, tagType, features, icon} = productData;
-    const [isSelected, setIsSelected] = useState(false);
+    // const [isSelected, setIsSelected] = useState(false);
 
     const isAlreadySelected = selectProduct.some(product => product.name === name);
 
@@ -60,9 +59,9 @@ const ProductsCards = ({productData, selectProduct, setSelectProduct}) => {
         </ul>
 
         <button onClick={() => handleSelectedBtn(productData)} className={`
-            ${isSelected ? 'bg-green-500' : 'bg-[linear-gradient(88deg,#4f39f6_0%,#9514fa_100%)]' }
+            ${isAlreadySelected ? 'bg-green-500' : 'bg-[linear-gradient(88deg,#4f39f6_0%,#9514fa_100%)]' }
             w-full py-2.5 text-white rounded-full font-semibold text-[16px] hover:opacity-90 transition-all active:scale-95 duration-150 cursor-pointer`}>
-            {isSelected ? 'Added to cart' : 'Buy Now'}
+            {isAlreadySelected ? 'Added to cart' : 'Buy Now'}
         </button>
 
         </div>
