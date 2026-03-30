@@ -1,5 +1,8 @@
-import { FiUserPlus, FiBox } from 'react-icons/fi';
-import { GoRocket } from 'react-icons/go';
+// import { FiUserPlus, FiBox } from 'react-icons/fi';
+// import { GoRocket } from 'react-icons/go';
+import userIcon from '../../../assets/image/user.png';
+import packIcon from '../../../assets/image/package.png';
+import rocketIcon from '../../../assets/image/rocket.png';
 
 const GetStarted = () => {
   return (
@@ -16,7 +19,8 @@ const GetStarted = () => {
             <span className="absolute top-4 right-4 bg-[linear-gradient(88deg,#4f39f6_0%,#9514fa_100%)] text-white text-xs font-bold w-8 h-8 flex items-center justify-center rounded-full">01</span>
             <div className="flex justify-center mb-6">
               <div className="w-20 h-20 bg-[#f3efff] rounded-full flex items-center justify-center text-[#4f39f6]">
-                <FiUserPlus size={32} />
+                {/* <FiUserPlus size={32} /> */}
+                <img className='w-[55%]' src={userIcon} alt="userIcon" />
               </div>
             </div>
             <h3 className="text-xl font-bold mb-3 text-gray-800">Create Account</h3>
@@ -30,7 +34,8 @@ const GetStarted = () => {
             <span className="absolute top-4 right-4 bg-[linear-gradient(88deg,#4f39f6_0%,#9514fa_100%)] text-white text-xs font-bold w-8 h-8 flex items-center justify-center rounded-full">02</span>
             <div className="flex justify-center mb-6">
               <div className="w-20 h-20 bg-[#f3efff] rounded-full flex items-center justify-center text-[#4f39f6]">
-                <FiBox size={32} />
+                {/* <FiBox size={32} /> */}
+                <img className='w-[55%]' src={packIcon} alt="packIcon" />
               </div>
             </div>
             <h3 className="text-xl font-bold mb-3 text-gray-800">Choose Products</h3>
@@ -44,7 +49,8 @@ const GetStarted = () => {
             <span className="absolute top-4 right-4 bg-[linear-gradient(88deg,#4f39f6_0%,#9514fa_100%)] text-white text-xs font-bold w-8 h-8 flex items-center justify-center rounded-full">03</span>
             <div className="flex justify-center mb-6">
               <div className="w-20 h-20 bg-[#f3efff] rounded-full flex items-center justify-center text-[#4f39f6]">
-                <GoRocket size={32} />
+                {/* <GoRocket size={32} /> */}
+                <img className='w-[55%]' src={rocketIcon} alt="rocketIcon" />
               </div>
             </div>
             <h3 className="text-xl font-bold mb-3 text-gray-800">Start Creating</h3>
