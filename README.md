@@ -1,17 +1,38 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Name: DigiTools
+```js
+Description: 
+I built this project to showcase a simple yet 
+effective digital tools marketplace using React. 
+It pulls product data dynamically from a JSON file and features a smooth cart management system. 
+I have also added toast notifications to give users instant feedback when they add or remove items.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Technology that i use: 
+React.js
+Tailwind CSS, DaisyUI
+JavaScript (ES6+)
+React-Toastify (NPM Package)
+JSON (for product data)
+React icons
 
-## React Compiler
+4 Features about my project.
+1.Dynamic Product Toggling: 
+Users can easily switch between the "Products" view and the "Cart" view using centered toggle buttons.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2.Interactive Cart Management: 
+Real time cart updates including adding items, 
+removing specific products, 
+and a "Proceed to Checkout" feature that clears the cart.
 
-## Expanding the ESLint configuration
+3.Instant Notifications: 
+Integrated React toastify to provide beautiful alert messages for every action 
+like adding to cart, removing items, or successful checkout.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# PH-ASSIGNMENT-06
+4.Fully Responsive Design: 
+Optimized for all screen sizes (Mobile, Tablet, and Desktop).
+
+```
+
+
+
