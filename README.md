@@ -8,7 +8,7 @@ It pulls product data dynamically from a JSON file and features a smooth cart ma
 I have also added toast notifications to give users instant feedback when they add or remove items.
 
 
-Technology that i use: 
+Technology what i use: 
 React.js
 Tailwind CSS, DaisyUI
 JavaScript (ES6+)
